@@ -33,7 +33,7 @@ st.set_page_config(page_title="Asistente Multimodal", layout="centered")
 st.title("🧠 Asistente Multimodal")
 st.subheader("🎙️ Control por voz + Temporizador Pomodoro")
 
-image = Image.open("voice_ctrl.jpg")
+image = Image.open("speak.jpg")
 st.image(image, width=200)
 
 st.write("Toca el botón y habla")
