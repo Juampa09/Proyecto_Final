@@ -31,7 +31,7 @@ client1.on_message = on_message
 st.title("INTERFACES MULTIMODALES")
 st.subheader("CONTROL POR VOZ")
 
-image = Image.open('Speak.jpg')
+image = Image.open('speak.jpg')
 
 st.image(image, width=200)
 
