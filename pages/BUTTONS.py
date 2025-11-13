@@ -31,6 +31,7 @@ client1.on_message = on_message
 
 
 st.title("Control manual")
+st.subheader("Botones para encender la luz")
 
 if st.button('ON'):
     act1="ON"
