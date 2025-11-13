@@ -84,5 +84,5 @@ if "mqtt_msg" in st.session_state and st.session_state["mqtt_msg"] == "pomodoro_
             st.metric("⏳ Tiempo restante", f"{mins:02d}:{secs:02d}")
             time.sleep(1)
         st.success("✅ Pomodoro terminado")
-        client1.publish("Aristizabal", "pomodoro_end")
+        client1.publish("Aristizabal")
         st.session_state["mqtt_msg"] = ""
