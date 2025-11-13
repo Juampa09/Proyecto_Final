@@ -29,7 +29,7 @@ client1.on_message = on_message
 
 
 st.title("Control por voz")
-st.subheader("CONTROL POR VOZ")
+
 
 image = Image.open('speak.jpg')
 
