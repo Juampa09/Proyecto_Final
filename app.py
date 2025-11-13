@@ -21,7 +21,7 @@ def on_message(client, userdata, message):
     message_received = str(message.payload.decode("utf-8"))
     st.session_state["mqtt_msg"] = message_received
 
-client1 = paho.Client("Proyecto01")
+client1 = paho.Client("Proyecto_Final01")
 client1.on_publish = on_publish
 client1.on_message = on_message
 client1.connect(broker, port)
