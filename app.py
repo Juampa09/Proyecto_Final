@@ -73,16 +73,16 @@ if result and "GET_TEXT" in result:
     comando = result.get("GET_TEXT").strip()
     st.write(f"🗣️ Comando recibido: {comando}")
     mensaje = json.dumps({"gesto": comando})
-    client1.publish("IMIA", mensaje)
+    client1.publish("Aristizabal", mensaje)
 
 # Temporizador Pomodoro
 if "mqtt_msg" in st.session_state and st.session_state["mqtt_msg"] == "pomodoro_start":
-    st.success("🍅 Pomodoro iniciado: 25 minutos")
+    st.success("🍅 Pomodoro iniciado: 5 minutos")
     with st.empty():
         for i in range(25 * 60, 0, -1):
             mins, secs = divmod(i, 60)
             st.metric("⏳ Tiempo restante", f"{mins:02d}:{secs:02d}")
             time.sleep(1)
         st.success("✅ Pomodoro terminado")
-        client1.publish("pomodoro", "pomodoro_end")
+        client1.publish("Aristizabal", "pomodoro_end")
         st.session_state["mqtt_msg"] = ""
