@@ -59,7 +59,7 @@ if st.button('OFF'):
 else:
     st.write('')
 
-values = st.slider('Selecciona el rango de valores',0.0, 100.0)
+values = st.slider('Posicón de la ventana',0.0, 100.0)
 st.write('Values:', values)
 
 if st.button('Enviar valor analógico'):
